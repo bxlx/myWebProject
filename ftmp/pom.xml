@@ -1,0 +1,134 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.xiaojiyun.wwww</groupId>
+  <artifactId>ftmp</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ftmp Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+   <properties>  
+    <org.springframework.version>4.2.4.RELEASE</org.springframework.version>
+    <org.hibernate.version>3.6.10.Final</org.hibernate.version> 
+    <org.struts2.version>2.3.16.3</org.struts2.version>
+    <org.tiles.version>3.0.5</org.tiles.version>      
+  </properties>
+  
+  <dependencies>
+   <dependency>  
+	   <groupId>org.springframework</groupId>  
+	   <artifactId>spring-context</artifactId>  
+	   <version>${org.springframework.version}</version>  
+	   <scope>runtime</scope>  
+	</dependency>
+	
+	<dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>4.1.4.RELEASE</version>
+    </dependency>
+        
+	<dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${org.hibernate.version}</version>
+    </dependency>
+    
+<!--     spring集成hibernate 需要-->
+    <dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-orm</artifactId>
+	  <version>4.2.4.RELEASE</version>
+	</dependency>
+	
+<!-- 	注解使用 如Resource等 -->
+	<dependency>
+	  <groupId>javax.annotation</groupId>
+	  <artifactId>javax.annotation-api</artifactId>
+	  <version>1.2</version>
+	</dependency>
+	
+<!-- 	注解使用 参数校验 -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-validator</artifactId>
+	    <version>4.2.0.Final</version>
+	</dependency>
+	
+    <dependency>
+	  <groupId>org.aspectj</groupId>
+	  <artifactId>aspectjweaver</artifactId>
+	  <version>1.8.6</version>
+	</dependency>
+	
+	<dependency>
+	  <groupId>mysql</groupId>
+	  <artifactId>mysql-connector-java</artifactId>
+	  <version>5.1.18</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>javassist</groupId>
+	    <artifactId>javassist</artifactId>
+	    <version>3.12.1.GA</version>
+	</dependency>
+	
+<!-- 	<dependency> -->
+<!-- 	    <groupId>org.springframework.security</groupId> -->
+<!-- 	    <artifactId>spring-security-core</artifactId> -->
+<!-- 	    <version>3.1.4.RELEASE</version> -->
+<!-- 	</dependency> -->
+	
+<!-- 	<dependency>  -->
+<!-- 	   <groupId>org.springframework.security</groupId> -->
+<!-- 	   <artifactId>spring-security-config</artifactId> -->
+<!-- 	   <version>3.1.4.RELEASE</version> -->
+<!-- 	</dependency> -->
+
+	
+<!-- 	<dependency> -->
+<!-- 	    <groupId>org.springframework.security</groupId> -->
+<!-- 	    <artifactId>spring-security-web</artifactId> -->
+<!-- 	    <version>3.1.4.RELEASE</version> -->
+<!-- 	</dependency> -->
+
+<!-- Spring Security -->
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>3.2.3.RELEASE</version>
+		</dependency>
+		
+	<dependency>  
+        <groupId>javax.servlet</groupId>  
+        <artifactId>jstl</artifactId>  
+        <version>1.2</version>  
+        <scope>runtime</scope>  
+   </dependency> 
+   
+   <dependency>
+		<groupId>javax.servlet</groupId>
+    	<artifactId>servlet-api</artifactId>
+    	<version>2.5</version>
+    	<scope>provided</scope>
+  </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>ftmp</finalName>
+  </build>
+</project>

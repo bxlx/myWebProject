@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/xiaojiyun/www/controller/LoginController.java=UTF-8
+encoding//src/main/webapp/WEB-INF/views/admin.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/hello.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/secruity/accessDenied.jsp=UTF-8
